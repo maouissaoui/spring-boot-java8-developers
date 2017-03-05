@@ -5,6 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * The Language entity.
+ * 
+ * @author  Moufida Aouissaoui
+ *
+ */
 @Entity
 public class Language {
 	@Id
@@ -13,17 +19,15 @@ public class Language {
 
 	public String name;
 	public String niveauCompetence;
-		
-//	private Set<Developer> developers = new HashSet<Developer>();
 
-	 public Language(){
-	
-	 }
-	
-	 public Language(String name, String niveauCompetence){
-	 this.name = name;
-	 this.niveauCompetence = niveauCompetence;
-	 }
+	public Language() {
+
+	}
+
+	public Language(String name, String niveauCompetence) {
+		this.name = name;
+		this.niveauCompetence = niveauCompetence;
+	}
 
 	public long getId() {
 		return id;
@@ -32,7 +36,6 @@ public class Language {
 	public void setId(long id) {
 		this.id = id;
 	}
-
 
 	public String getName() {
 		return name;

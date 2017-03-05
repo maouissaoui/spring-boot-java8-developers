@@ -3,7 +3,6 @@
  */
 package fr.developers.start;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,7 +10,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 /**
- * @author Aouissaoui
+ * The Developer entity.
+ * 
+ * @author  Moufida Aouissaoui
  *
  */
 @Entity
@@ -22,7 +23,8 @@ public class Developer {
 	private String firstname;
 	private String lastname;
 	private String email;
-    @OneToOne(cascade = CascadeType.ALL)
+	private String competence;
+	@OneToOne
 	private Language langage;
 
 	public Developer() {
@@ -68,5 +70,15 @@ public class Developer {
 		this.langage = langage;
 	}
 
+	public String getCompetence() {
+		return competence;
+	}
+
+	public void setCompetence(String competence) {
+		this.competence = competence;
+	}
+	
+	
+ 
 
 }
