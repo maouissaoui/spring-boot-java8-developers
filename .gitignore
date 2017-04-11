@@ -1,1 +1,25 @@
-/target/
+
+# directories
+
+.target/
+
+.worksheet/
+bin/
+build/
+dist/
+logs/
+node_modules/
+out/
+
+tmp/
+
+# files
+
+*/.DS_Store
+\#*
+.cache
+.DS_Store
+.history
+.idea_modules
+
+RUNNING_PID

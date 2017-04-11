@@ -1,0 +1,18 @@
+
+# ===============================
+# = DATA SOURCE
+# ===============================
+
+spring:
+    jpa:
+        database: MYSQL
+        hibernate:
+            ddl-auto: update
+
+    datasource:
+        url: jdbc:mysql://localhost/developers
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+
+#server.port=8086
